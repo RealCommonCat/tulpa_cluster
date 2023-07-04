@@ -1,6 +1,6 @@
 import numpy as np
-
 import sys
+from sklearn.preprocessing import StandardScaler 
 import pandas as pd
 import plotly.express as px
 from sklearn.datasets import make_blobs
@@ -22,4 +22,7 @@ def cluster(vectors_weight,data,num_clusters):
     for i in range(len(data)):
         for j in range(len(vectors_weight)):
             data_[i,j]=vectors_weight[j]["weight"]*data[i,j]
+    std = StandardScaler()
+    data_ = std.fit_transform(data)
+    data_=std.inverse_transform(data_) 
     return cluster_(data_,num_clusters)
