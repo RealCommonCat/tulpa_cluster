@@ -1,6 +1,5 @@
 import pandas as pd
 # 读取Excel文件
-data = pd.read_excel('data.xlsx')
 result = []
 # 1.身体的年龄是？	
 # 2.身体的性别是？	
@@ -175,13 +174,15 @@ result = []
 # 174.(都没有？)	
 # 175.还有有什么想说的就写到这里吧	
 # 176.总分
-for index, row in data.iterrows():
-    name = row[0]
-    # 提取第六个到最后一个单元格（不包含最后一列，因此使用None作为结束索引）
-    item = row[6:None].tolist()
-    
-    # 存储结果
-    result.append({'name': name, 'item': item})
+def read_excel():
+    data = pd.read_excel('data.xlsx')
+    #源文件
+    for index, row in data.iterrows():
+        name = row[0]
+        # 提取第六个到最后一个单元格（不包含最后一列，因此使用None作为结束索引）
+        item = row[6:None].tolist()    
+        # 存储结果
+        result.append({'name': name, 'item': item})
 
 # 输出结果
 print(result)
