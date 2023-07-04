@@ -1,6 +1,4 @@
-import pandas as pd
-# 读取Excel文件
-result = []
+
 # 1.身体的年龄是？	
 # 2.身体的性别是？	
 # 3.在目前的T家四分类法中你们属于哪一类呢？(一类)
@@ -174,6 +172,11 @@ result = []
 # 174.(都没有？)	
 # 175.还有有什么想说的就写到这里吧	
 # 176.总分
+import pandas as pd
+# 读取Excel文件
+result = []
+from map_content_to_id import ContentToIdx
+from map_idx_to_content import idxtoContent
 def read_excel():
     data = pd.read_excel('data.xlsx')
     #源文件
@@ -183,6 +186,19 @@ def read_excel():
         item = row[6:None].tolist()    
         # 存储结果
         result.append({'name': name, 'item': item})
-
+vectors_weight=[]
+#向量权重
+def enter_vectors_weight():
+    for i in range(1,177):
+        print(str(i)+":"+str(idxtoContent(i)),end="||")
+    print("\n\033[31m以上为项目号对应的项目维度 请选择聚类需要的项目维度的编号以及权重 格式是 [编号],[权重]; 权重取值范围0-1\033[0m")
+    inputs=input()
+    for inputs_ in inputs.split(";"):
+        idx=int(inputs_.split(",")[0])
+        weight=float(inputs_.split(",")[1])
+        vectors_weight.append({"idx":idx,"name":idxtoContent(idx),"weight":weight})
+    print("向量权重")
+    print(vectors_weight)
 # 输出结果
 print(result)
+enter_vectors_weight()
