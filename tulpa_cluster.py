@@ -173,19 +173,21 @@
 # 175.还有有什么想说的就写到这里吧	
 # 176.总分
 import pandas as pd
+import numpy as np
+import sys
+np.set_printoptions(threshold=np.inf)
 # 读取Excel文件
-result = []
+data = []
 from map_content_to_id import ContentToIdx
 from map_idx_to_content import idxtoContent
 def read_excel():
-    data = pd.read_excel('data.xlsx')
+    data_ = pd.read_excel('data.xlsx')
     #源文件
-    for index, row in data.iterrows():
+    for index, row in data_.iterrows():
         name = row[0]
-        # 提取第六个到最后一个单元格（不包含最后一列，因此使用None作为结束索引）
-        item = row[6:None].tolist()    
+        item = row[0:None].tolist()    
         # 存储结果
-        result.append({'name': name, 'item': item})
+        data.append({'name': name, 'item': item})
 vectors_weight=[]
 #向量权重
 def enter_vectors_weight():
@@ -199,6 +201,24 @@ def enter_vectors_weight():
         vectors_weight.append({"idx":idx,"name":idxtoContent(idx),"weight":weight})
     print("向量权重")
     print(vectors_weight)
-# 输出结果
-print(result)
+begin_idx=6
+np.set_printoptions(threshold=np.inf)
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', None) 
+pd.set_option('display.max_colwidth', -1)
+def process_data():
+    for i in range(len(data)):
+        for j in range(len(vectors_weight)):
+            data_[i,j]=data[i]['item'][vectors_weight[j]["idx"]+begin_idx]
+    print(data_)
+read_excel()
 enter_vectors_weight()
+from ChineseWhisper import cluster
+num_clusters=int(input("输入需要聚类的数量"))
+data_=np.zeros([len(data),len(vectors_weight)])
+process_data()
+df=cluster(vectors_weight,data_,num_clusters)
+file_name=input("输入存储结果的文件名")
+f=open("./"+file_name,"w",encoding="utf-8")
+f.write(str(df))
