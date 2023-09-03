@@ -231,118 +231,122 @@ def ContentToIdx(content):
     case '(其他)	':
          return 115
     case '在下列属性中，你的tulpa拥有哪些呢？(完整清晰的外貌和脸)	':
-         return 117
+         return 116
     case '(独特的声线)	':
-         return 118
+         return 117
     case '(独特的思维模式)	':
-         return 119
+         return 118
     case '(数学和逻辑推理能力)	':
-         return 120
+         return 119
     case '(改变幻境的能力)	':
-         return 121
+         return 120
     case '(独有的兴趣或喜好)	':
-         return 122
+         return 121
     case '(安抚宿主的能力)	':
-         return 123
+         return 122
     case '(一定的独立外在人际关系（网上也算）)	':
+         return 123
+    case '(长时间交换不难受的能力)	':
          return 124
-    case '(长时间交换不难受的能力)	26、(一定程度上能和宿主抗衡的权限)	26、(都没有)	':
+    case '(一定程度上能和宿主抗衡的权限)':
          return 125
+    case '(都没有)':
+         return 126
     case '宿主和tulpa之间能够传递哪些内容呢？(头压)	':
-         return 128
+         return 127
     case '(t语)	':
-         return 129
+         return 128
     case '(现实语言)	':
-         return 130
-    case '(主观情绪（如喜悦）)	':
-         return 131
-    case '(主观感觉（如味觉）)	':
-         return 132
-    case '(记忆片段)	':
-         return 133
-    case '(知识技能)	':
-         return 134
-    case '(系统权限)	':
-         return 135
-    case '(其他)	':
-         return 136
-    case '(都不能？)	':
-         return 137
-    case '你和你的tulpa（们）是什么关系呢？(恋人)	':
-         return 138
-    case '(夫妻)	':
          return 139
+    case '(主观情绪（如喜悦）)	':
+         return 130
+    case '(主观感觉（如味觉）)	':
+         return 131
+    case '(记忆片段)	':
+         return 132
+    case '(知识技能)	':
+         return 133
+    case '(系统权限)	':
+         return 134
+    case '(其他)	':
+         return 135
+    case '(都不能？)	':
+         return 136
+    case '你和你的tulpa（们）是什么关系呢？(恋人)	':
+         return 137
+    case '(夫妻)	':
+         return 138
     case '(好朋友)	':
-         return 140
+         return 139
     case '(兄弟姐妹)	':
-         return 141
+         return 140
     case '(亲子（宿主为父母）)	':
-         return 142
+         return 141
     case '(亲子（宿主为子女）)	':
-         return 143
+         return 142
     case '(泛化的家人关系)	':
-         return 144
+         return 143
     case '(比任何现实关系更为亲近的HT关系)	':
+         return 144
+    case '(其他)	':
          return 145
-    case '(其他)	':
-         return 146
     case '宿主和tulpa平时会搞不清谁是谁吗？	':
-         return 147
+         return 146
     case '在宿主感到非常难过的时候，tulpa会？(受到抑制难以出来)	':
-         return 148
+         return 147
     case '(和宿主一起抱团难过)	':
-         return 149
+         return 148
     case '(没有太多影响)	':
-         return 150
+         return 149
     case '(交换替宿主分担)	':
-         return 151
+         return 150
     case '(变得活跃清醒并积极安慰宿主)	':
-         return 152
+         return 151
     case '(由于屏蔽，tulpa不知道)	':
-         return 153
+         return 152
     case '(目前没有出现过特别难过的情况)':
+         return 153
+    case '(其他)	':
          return 154
-    case '(其他)	':
-         return 155
     case '平时会贴贴吗？	':
-         return 156
+         return 155
     case '和没有tulpa的时候相比，宿主感觉tulpa让自己的情绪和生活变得怎么样了呢？	':
-         return 157
+         return 156
     case '(tulpa 回答）你最早的自我记忆是出现在什么时间段呢？	':
-         return 158
+         return 157
     case '宿主对tulpa抱有哪些感情呢？(亲情)	':
+         return 158
+    case '(友情)	':
          return 159
-    case '(友情)	':
+    case '(爱情)	':
          return 160
-    case '(爱情)	':
+    case '(占有欲)	':
          return 161
-    case '(占有欲)	':
+    case '(保护欲)	':
          return 162
-    case '(保护欲)	':
+    case '(涩涩的感情)	':
          return 163
-    case '(涩涩的感情)	':
+    case '(其他)	':
          return 164
-    case '(其他)	':
+    case '(都没有？)	':
          return 165
-    case '(都没有？)	':
-         return 166
     case 'tulpa对宿主抱有哪些感情呢？(亲情)	':
-         return 167
+         return 166
     case '(友情)	':
-         return 168
+         return 167
     case '(爱情)	':
-         return 169
+         return 168
     case '(占有欲)	':
-         return 170
+         return 169
     case '(保护欲)	':
-         return 171
+         return 170
     case '(涩涩的感情)	':
-         return 172
+         return 171
     case '(其他)	':
-         return 173
+         return 172
     case '(都没有？)	':
-         return 174
+         return 173
     case '还有有什么想说的就写到这里吧	':
-         return 175
+         return 174
     case '总分':
-         return 176
+         return 175
