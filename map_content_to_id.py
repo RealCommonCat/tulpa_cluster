@@ -257,7 +257,7 @@ def ContentToIdx(content):
     case '(t语)	':
          return 128
     case '(现实语言)	':
-         return 139
+         return 129
     case '(主观情绪（如喜悦）)	':
          return 130
     case '(主观感觉（如味觉）)	':
