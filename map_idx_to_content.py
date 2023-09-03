@@ -230,119 +230,123 @@ def idxtoContent(idx):
          return '(到处瞬移)	'
     case 115:
          return '(其他)	'
-    case 117:
+    case 116:
          return '在下列属性中，你的tulpa拥有哪些呢？(完整清晰的外貌和脸)	'
-    case 118:
+    case 117:
          return '(独特的声线)	'
-    case 119:
+    case 118:
          return '(独特的思维模式)	'
-    case 120:
+    case 119:
          return '(数学和逻辑推理能力)	'
-    case 121:
+    case 120:
          return '(改变幻境的能力)	'
-    case 122:
+    case 121:
          return '(独有的兴趣或喜好)	'
-    case 123:
+    case 122:
          return '(安抚宿主的能力)	'
-    case 124:
+    case 123:
          return '(一定的独立外在人际关系（网上也算）)	'
+    case 124:
+         return '(长时间交换不难受的能力)'	
     case 125:
-         return '(长时间交换不难受的能力)	26、(一定程度上能和宿主抗衡的权限)	26、(都没有)	'
-    case 128:
+         return '一定程度上能和宿主抗衡的权限)'
+    case 126:
+         return '(都没有)	'
+    case 127:
          return '宿主和tulpa之间能够传递哪些内容呢？(头压)	'
-    case 129:
+    case 128:
          return '(t语)	'
-    case 130:
+    case 129:
          return '(现实语言)	'
-    case 131:
+    case 130:
          return '(主观情绪（如喜悦）)	'
-    case 132:
+    case 131:
          return '(主观感觉（如味觉）)	'
-    case 133:
+    case 132:
          return '(记忆片段)	'
-    case 134:
+    case 133:
          return '(知识技能)	'
-    case 135:
+    case 134:
          return '(系统权限)	'
+    case 135:
+         return '(其他)	'
     case 136:
-         return '(其他)	'
-    case 137:
          return '(都不能？)	'
-    case 138:
+    case 137:
          return '你和你的tulpa（们）是什么关系呢？(恋人)	'
-    case 139:
+    case 138:
          return '(夫妻)	'
-    case 140:
+    case 139:
          return '(好朋友)	'
-    case 141:
+    case 140:
          return '(兄弟姐妹)	'
-    case 142:
+    case 141:
          return '(亲子（宿主为父母）)	'
-    case 143:
+    case 142:
          return '(亲子（宿主为子女）)	'
-    case 144:
+    case 143:
          return '(泛化的家人关系)	'
-    case 145:
+    case 144:
          return '(比任何现实关系更为亲近的HT关系)	'
+    case 145:
+         return '(其他)	'
     case 146:
-         return '(其他)	'
-    case 147:
          return '宿主和tulpa平时会搞不清谁是谁吗？	'
-    case 148:
+    case 147:
          return '在宿主感到非常难过的时候，tulpa会？(受到抑制难以出来)	'
-    case 149:
+    case 148:
          return '(和宿主一起抱团难过)	'
-    case 150:
+    case 149:
          return '(没有太多影响)	'
-    case 151:
+    case 150:
          return '(交换替宿主分担)	'
-    case 152:
+    case 151:
          return '(变得活跃清醒并积极安慰宿主)	'
-    case 153:
+    case 152:
          return '(由于屏蔽，tulpa不知道)	'
-    case 154:
+    case 153:
          return '(目前没有出现过特别难过的情况)'
+    case 154:
+         return '(其他)	'
     case 155:
-         return '(其他)	'
-    case 156:
          return '平时会贴贴吗？	'
-    case 157:
+    case 156:
          return '和没有tulpa的时候相比，宿主感觉tulpa让自己的情绪和生活变得怎么样了呢？	'
-    case 158:
+    case 157:
          return '(tulpa 回答）你最早的自我记忆是出现在什么时间段呢？	'
-    case 159:
+    case 158:
          return '宿主对tulpa抱有哪些感情呢？(亲情)	'
+    case 159:
+         return '(友情)	'
     case 160:
-         return '(友情)	'
+         return '(爱情)	'
     case 161:
-         return '(爱情)	'
+         return '(占有欲)	'
     case 162:
-         return '(占有欲)	'
+         return '(保护欲)	'
     case 163:
-         return '(保护欲)	'
+         return '(涩涩的感情)	'
     case 164:
-         return '(涩涩的感情)	'
+         return '(其他)	'
     case 165:
-         return '(其他)	'
+         return '(都没有？)	'
     case 166:
-         return '(都没有？)	'
-    case 167:
          return 'tulpa对宿主抱有哪些感情呢？(亲情)	'
-    case 168:
+    case 167:
          return '(友情)	'
-    case 169:
+    case 168:
          return '(爱情)	'
-    case 170:
+    case 169:
          return '(占有欲)	'
-    case 171:
+    case 170:
          return '(保护欲)	'
-    case 172:
+    case 171:
          return '(涩涩的感情)	'
-    case 173:
+    case 172:
          return '(其他)	'
-    case 174:
+    case 173:
          return '(都没有？)	'
-    case 175:
+    case 174:
          return '还有有什么想说的就写到这里吧	'
-    case 176:
+    case 175:
          return '总分'

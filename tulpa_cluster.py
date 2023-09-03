@@ -206,7 +206,6 @@ np.set_printoptions(threshold=np.inf)
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None) 
-pd.set_option('display.max_colwidth', -1)
 def process_data():
     for i in range(len(data)):
         for j in range(len(vectors_weight)):
